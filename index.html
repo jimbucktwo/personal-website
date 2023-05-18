@@ -6,32 +6,68 @@
     <style>
       .myphoto {
         width: 200px;
-        border-radius: 10px;
+        border-radius: 5px;
         object-fit: cover;
-        float: left;
-        margin-right: 20px;
       }
 
-      .username {
-        font-weight: bold;
+      h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
 
       .bio {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
+        width: 292.64px;
+      }
+      .biography {
+        display: inline-block;
+        
+      }
+      .introduction {
+        display: inline-block;
+      }
+
+      .replit-button {
+        width: 500px;
+        height: 100px;
+        background-color:rgb(198, 250, 222);
+        border-radius: 50px;
+        border-width: 0.5px;
+        border-color: rgb(45, 177, 106);
+        transition: opacity 0.1s;
+        transition: box-shadow 0.1s;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .replit-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.06s;
+
+      }
+
+      .replit-button:active {
+        background-color: rgb(2, 250, 118);
       }
     </style>
   </head>
   <body>
     <center>
-      <h1>My Personal Projects</h1>
+      <div class="introduction">
+        <h1>My Personal Projects</h1>
+        <img class="myphoto" src="images/myphoto.JPG" width="300" />
+      </div>
+      
+      <div class="biography">
+        <p class="bio">
+        Hi! I am currently a student at California State University, Long Beach
+        and am in the midst of pursuing my bachelors degree in Computer Science. Here are a couple
+        of projects that I have completed.
+        </p>
+      </div>
     </center>
-    <img class="myphoto" src="images/myphoto.JPG" width="300" />
-    <p class="username"></p>
-    <p class="bio">
-      Hi! I am currently a student at California State University, Long Beach
-      and am pursuing my bachelors degree in Computer Science. Here are a couple
-      of projects that I have completed/working on.
-    </p>
+    <button class="replit-button">
+        Replit Projects
+    </button>
   </body>
 </html>

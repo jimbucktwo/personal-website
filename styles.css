@@ -1,0 +1,30 @@
+.myphoto {
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .username {
+    font-weight: bold;
+  }
+
+  .bio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 292.64px;
+  }
+  .biography {
+    display: inline-block;
+    
+  }
+  .introduction {
+    display: inline-block;
+  }
+
+  .replit-button {
+    width: 500px;
+    height: 100px;
+    background-color:rgb(198, 250, 222);
+    border-radius: 10px;
+    border-width: 1px;
+  }
