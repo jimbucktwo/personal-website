@@ -1,54 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio</title>
-    <style>
-      .myphoto {
-        width: 200px;
-        border-radius: 5px;
-        object-fit: cover;
-      }
-
-      h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-
-      .bio {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
-        width: 292.64px;
-      }
-      .biography {
-        display: inline-block;
-        
-      }
-      .introduction {
-        display: inline-block;
-      }
-
-      .replit-button {
-        width: 500px;
-        height: 100px;
-        background-color:rgb(198, 250, 222);
-        border-radius: 50px;
-        border-width: 0.5px;
-        border-color: rgb(45, 177, 106);
-        transition: opacity 0.1s;
-        transition: box-shadow 0.1s;
-        font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-      }
-
-      .replit-button:hover {
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-        transition: background-color 0.06s;
-
-      }
-
-      .replit-button:active {
-        background-color: rgb(2, 250, 118);
-      }
+    <style type="text/css">
+      @import url("styles.css");
     </style>
   </head>
   <body>
@@ -57,17 +16,26 @@
         <h1>My Personal Projects</h1>
         <img class="myphoto" src="images/myphoto.JPG" width="300" />
       </div>
-      
+
       <div class="biography">
         <p class="bio">
-        Hi! I am currently a student at California State University, Long Beach
-        and am in the midst of pursuing my bachelors degree in Computer Science. Here are a couple
-        of projects that I have completed.
+          Hi! I am currently a student at California State University, Long
+          Beach and am in the midst of pursuing my bachelors degree in Computer
+          Science. Here are a couple of projects that I have completed.
         </p>
       </div>
+
+      <div>
+        <button
+          class="first-div-button"
+          onclick="window.location.href='https://replit.com/@JimmyTran26';"
+        >
+          Replit Projects
+        </button>
+
+        <button class="first-div-button">Instagram</button>
+        <button class="first-div-button">Github</button>
+      </div>
     </center>
-    <button class="replit-button">
-        Replit Projects
-    </button>
   </body>
 </html>
