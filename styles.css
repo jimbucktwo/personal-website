@@ -1,3 +1,6 @@
+body {
+  background-image: linear-gradient(0deg, rgb(0, 36, 19),rgb(0, 116, 52));
+}
 .myphoto {
   width: 200px;
   border-radius: 5px;
@@ -7,6 +10,7 @@
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
+  color:rgb(219, 255, 237);
 }
 
 .bio {
@@ -14,6 +18,7 @@ h1 {
     sans-serif;
   font-size: 15px;
   width: 292.64px;
+  color:rgb(221, 253, 237);
 }
 
 .introduction {
@@ -21,8 +26,8 @@ h1 {
 }
 
 .first-div-button {
-  width: 500px;
   height: 100px;
+  width: 500px;
   background-color: rgb(198, 250, 222);
   border-radius: 50px;
   border-width: 0.5px;
@@ -37,6 +42,8 @@ h1 {
 .first-div-button:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   transition: background-color 0.06s;
+  background-color:rgb(245, 255, 250);
+  cursor: pointer;
 }
 
 .first-div-button:active {
@@ -47,15 +54,15 @@ h1 {
   display: inline-block;
 }
 
-.test-button {
-  width: 500px;
-  height: 100px;
-  background-color: rgb(198, 250, 222);
-  border-radius: 50px;
-  border-width: 0.5px;
-  border-color: rgb(45, 177, 106);
-  transition: opacity 0.1s;
-  transition: box-shadow 0.1s;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
+.insta-div {
+  display: inline-block;
+}
+
+.github-div {
+  display: inline-block;
+}
+
+.test-div {
+  height: 400px;
+
 }
