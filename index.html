@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio</title>
-    <style>
-      .myphoto {
-        width: 200px;
-        margin-bottom: 10px;
-      }
-
-      .username {
-        font-weight: bold;
-      }
-
-    .bio {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <center>
-      <h1>My Personal Projects</h1>
-    
-      <img class="myphoto" src="images/myphoto.JPG" width="300" />
-      <p class="username"></p>
-      <p class="bio">
-        Hi! I am currently a student at California State University, Long Beach
-        and am pursuing my bachelors degree in Computer Science. Here are a
-        couple of projects that I have completed/working on.
-      </p>
+      <div class="introduction">
+        <h1>My Personal Projects</h1>
+        <img class="myphoto" src="images/myphoto.JPG" width="300" />
+      </div>
+
+      <div class="biography">
+        <p class="bio">
+          Hi! I am currently a student at California State University, Long
+          Beach and am in the midst of pursuing my bachelors degree in Computer
+          Science.
+        </p>
+      </div>
+
+      <div class="replit-div">
+        <button
+          class="first-div-button"
+          onclick="window.location.href='https://replit.com/@JimmyTran26';"
+        >
+          Replit Projects
+        </button>
+      </div>
+      <div class="insta-div">
+        <button class="first-div-button">Instagram</button>
+      </div>
+      <div class="github-div">
+        <button class="first-div-button">Github</button>
+      </div>
     </center>
+    <div class="test-div">
+
+    </div>
   </body>
 </html>
