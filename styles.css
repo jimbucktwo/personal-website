@@ -5,7 +5,7 @@ body {
   background-color: #E8E8E8;
   margin: 0px;
   padding: 0px;
-  font-family:'open Sans', Arial;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 12px;
 }
 
@@ -19,49 +19,60 @@ body {
          url('../fonts/icomoon/icomoon.ttf') format('truetype');
 }	       
 
-div.home-page{
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+h1 {
+  font-size: 24px;
 }
 
-div.introduction{
+h2 {
+  font-size: 20px;
+}
+div.home-page{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px aliceblue;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.description {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+}
+.introduction {
+  list-style-type: none;
 }
 
 .myphoto {
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin-right: 30px;
 }
 
-h1 {
+div.home-page h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  color:rgb(22, 185, 104);
+  align-items: center;
+  justify-content: center;
 }
 
 .bio {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
+  float: left;
   font-size: 15px;
-  width: 292.64px;
-  color:rgb(22, 185, 104);
+  max-width: 100%;
   margin-top: 20px;
   display: block;
 }
 
-.introduction {
-  display: inline-block;
-}
 
 .socialicons {
-  float:right;
-  margin-top:18px;
+  float: right;
+  margin-right: 4px;
+  
 }
 .socialicons li {
   float:left;
@@ -99,14 +110,32 @@ h1 {
   display: flex;
 }
 
-#main-menu1 {
-  padding: 10px;
+#main-menu li {
+  position: relative;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#main-menu2 {
-  padding: 10px;
+#main-menu li a {
+
 }
 
-#main-menu3 {
-  padding: 10px;
+/* Custom bullets using ::before pseudo-element */
+#main-menu li::before {
+  font-size: 24px;
+  position: absolute;
+  left: -30px; /* Adjusts positioning of the bullet */
+  top: 50%;
+  transform: translateY(-50%); /* Center the bullet vertically */
+}
+
+/* Hover effect for a nice interaction */
+#main-menu li:hover {
+  background-color: #ffefd5; /* Light hover effect */
+  transform: scale(1.02); /* Slightly increase size on hover */
 }
