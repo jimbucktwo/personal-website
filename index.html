@@ -6,68 +6,257 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
 
+   
+    <script src="jquerymin.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
-    
+
+    <!-- HOME PAGE -->
     <div class="home-with-header">
-    <div class="header">
-      <h1>My Personal Website</h1>
-      <img src = "images/home.png" alt="Home icon button">
-    </div>
-
-    <div class="home-page">
-       <div class="description">
-       <ul class="introduction">
-        <li><span class="first-word">Name:</span> Jimmy Tran</li>
-        <li><span class="first-word">Email:</span> jimmytraann@gmail.com</li>
-        <li><span class="first-word">Phone:</span> (714)-951-1350</li>
-        <li><span class="first-word">Grad Date:</span> May 2025</li>
-       </ul>
-       <div class = "photo"><img class="myphoto" src="images/myphoto3.jpeg"/></div>
-      </div>
-    
-    <div class="page-display">
-      <section>
-        
-        <h2>Cover Letter</h2>
-        <p class="cover-letter">Hi, I am currently enrolled at California State University, Long Beach and am in the midst of pursuing my Bachelors in Computer Science.
-          My goals are to develop my web skills with emphasis on front-end aspects. Throughout my college degree, I have taken relevant courses such as:
-        </p>
-        <ul id="courses">
-          <li>Data Structures and Algorithms</li>
-          <li>Databases (Relational and NoSQL)</li>
-          <li>Mobile App Development in Android</li>
-          <li>Web Development</li>
+      <div class="header">
+        <ul class="socialicons">
+          <li>
+            <a
+              href="https://www.instagram.com/jimothytran/"
+              target="_blank"
+              class="transition"
+              >&#xea92;</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/jimbucktwo"
+              target="_blank"
+              class="transition"
+              >&#xeab0;</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jimmy-tran1023/"
+              target="_blank"
+              class="transition"
+              >&#xeac9;</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://replit.com/@JimmyTran26"
+              target="_blank"
+              class="transition"
+              >&#xeaa7;</a
+            >
+          </li>
         </ul>
+        <h1 id="main-title">My Personal Website</h1>
+        <a href="#home-with-header" id="home-button">&#xe900;</a>
+      </div>
 
-        <p class="cover-letter-2">I also have experience working with various different software, such as ReactJS, NodeJS, Android Studio, MongoDB, and GitHub to name a few. 
-           I am also curious to learn new technologies since I have a knack at picking things up quick. Click below to explore more about me!
-        </p>
+      <div class="home-page">
+        <div class="description">
+          <ul class="introduction">
+            <li><span class="first-word">Name:</span> Jimmy Tran</li>
+            <li>
+              <span class="first-word">Email:</span> jimmytraann@gmail.com
+            </li>
+            <li><span class="first-word">Phone:</span> (714)-951-1350</li>
+            <li><span class="first-word">Grad Date:</span> May 2025</li>
+          </ul>
+          <div class="photo">
+            <img class="myphoto" src="images/myphoto3.jpeg" />
+          </div>
+        </div>
+
+        <div class="page-display">
+          <section>
+            <h2>Cover Letter</h2>
+            <p class="cover-letter">
+              Hi, I am currently enrolled at California State University, Long
+              Beach and am in the midst of pursuing my Bachelors in Computer
+              Science. My goals are to develop my web skills with emphasis on
+              front-end aspects. Throughout my college degree, I have taken
+              relevant courses such as:
+            </p>
+            <ul id="courses">
+              <li>Data Structures and Algorithms</li>
+              <li>Databases (Relational and NoSQL)</li>
+              <li>Mobile App Development in Android</li>
+              <li>Web Development</li>
+            </ul>
+
+            <p class="cover-letter-2">
+              I also have experience working with various different software,
+              such as ReactJS, NodeJS, Android Studio, MongoDB, and GitHub to
+              name a few. I am also curious to learn new technologies since I
+              have a knack at picking things up quick. Click below to explore
+              more about me!
+            </p>
+          </section>
+        </div>
+      </div>
+      <section>
+        <div>
+          <ul id="main-menu">
+            <li id="main-menu1"><a href="#resume" data-id="resume">Resume</a></li>
+            <li id="main-menu2"><a href="#projects" data-id="projects">Projects</a></li>
+            <li id="main-menu3"><a href="#contact" data-id="contact">Contact</a></li>
+          </ul>
+        </div>
       </section>
     </div>
-    </div>
-      <section>
-      <div>
-        <ul id="main-menu">
-          <li id="main-menu1">Resume</li>
-          <li id="main-menu2">Projects</li>
-          <li id="main-menu3">Contact</li>
+
+    <!-- RESUME SECTION-->
+    <section id="resume">
+      <div class="timeline-section">
+        <!-- Timeline for Employment  -->
+        <h3 class="main-heading">Employment</h3>
+        <ul class="timeline">
+          <li>
+            <div class="timelineUnit">
+              <h4>
+                Boiling Point<span class="timelineDate"
+                  >Nov 2022 - Aug 2024</span
+                >
+              </h4>
+              <h5>Server</h5>
+              <p>Interacted and served ~30 customers simultaneously</p>
+              <p>Ensured guest happiness by initiating conversation and tending to needs</p>
+              <p>Cleaned and organized various front and back of house areas</p>
+              
+            </div>
+          </li>
+          <li>
+            <div class="timelineUnit">
+              <h4>
+                Schoolhouse.world<span class="timelineDate"
+                  >Sep 2020 - March 2021</span
+                >
+              </h4>
+              <h5>Online Tutor</h5>
+              <p>Hosted tutoring sessions online for students</p>
+              <p>Explained complex math concepts such as algebra and geometry</p>
+              <p>Encouraged group discussion between students</p>
+            </div>
+          </li>
+          <div class="clear"></div>
         </ul>
+        <!-- /Timeline for Employment  -->
+
+        <!-- Timeline for Education  -->
+        <h3 class="main-heading">Education</h3>
+        <ul class="timeline">
+          <li>
+            <div class="timelineUnit">
+              <h4>
+                California State University, Long Beach<span class="timelineDate">2021 - present</span>
+              </h4>
+              <h5>School Of Engineering</h5>
+              <p>
+                Major: Computer Science, GPA of 3.9
+              </p>
+            </div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+        <!-- /Timeline for Education  -->
+
+        <!-- Timeline for Volunteer  -->
+        <h3 class="main-heading">Extracurriculars</h3>
+        <ul class="timeline">
+          <li>
+            <div class="timelineUnit">
+              <h4>
+                Student Assistant<span class="timelineDate">2021 - 2023</span>
+              </h4>
+              <h5>Blooming Music Academy</h5>
+              <p>
+                With piano as one of my passions, I taught students how to play the piano and basic piano theory
+              </p>
+            </div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+        <!-- /Timeline for Volunteer  -->
       </div>
-      </section>
-      <ul class="socialicons">
-        <li><a href="#" class="transition">&#x2a;</a></li>
-        <li><a href="#" class="transition">&#x2c;</a></li>
-        <li><a href="#" class="transition">&#x2d;</a></li>
-        <li><a href="#" class="transition">&#x31;</a></li>
-      </ul>
+      <div class="skills-section">
+        <!-- Skills -->
+        <h3 class="main-heading">Some Skills I Know</h3>
+        <ul class="skills">
+          <li>
+            <h4>Python</h4>
+            <div class="rating" data-rat="6"></div>
+          </li>
+          <li>
+            <h4>SQL</h4>
+            <div class="rating" data-rat="3"></div>
+          </li>
+          <li>
+            <h4>HTML/CSS</h4>
+            <div class="rating" data-rat="7"></div>
+          </li>
+          <li>
+            <h4>Javascript</h4>
+            <div class="rating" data-rat="7"></div>
+          </li>
+          <li>
+            <h4>C++</h4>
+            <div class="rating" data-rat="4"></div>
+          </li>
+        </ul>
 
-    
-    </div>
+        <h3 class="main-heading">Software Skills</h3>
+        <ul class="skills">
+          <li>
+            <h4>VSCode</h4>
+            <div class="rating" data-rat="7"></div>
+          </li>
+          <li>
+            <h4>MongoDB</h4>
+            <div class="rating" data-rat="4"></div>
+          </li>
+          <li>
+            <h4>GitHub</h4>
+            <div class="rating" data-rat="6"></div>
+          </li>
+          <li>
+            <h4>AWS</h4>
+            <div class="rating" data-rat="3"></div>
+          </li>
+        </ul>
 
+        <h3 class="main-heading">Course Skills</h3>
+        <ul class="skills">
+          <li>
+            <h4>Object-Oriented Programming</h4>
+            <div class="rating" data-rat="6"></div>
+          </li>
+          <li>
+            <h4>Data Structures/Algorithms</h4>
+            <div class="rating" data-rat="5"></div>
+          </li>
+          <li>
+            <h4>Databases (Sql and NoSql)</h4>
+            <div class="rating" data-rat="4"></div>
+          </li>
+        </ul>
+        <!-- /Skills -->
+      </div>
+      <div class="clear"></div>
+      <a href="#" class="button transition">Download PDF Resume File</a>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects"></section>
+    <section id="contact"></section>
   </body>
 </html>
