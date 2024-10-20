@@ -14,12 +14,10 @@
     />
     <link href="styles.css" rel="stylesheet" />
 
-   
     <script src="jquerymin.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
-
     <!-- HOME PAGE -->
     <div class="home-with-header">
       <div class="header">
@@ -106,9 +104,15 @@
       <section>
         <div>
           <ul id="main-menu">
-            <li id="main-menu1"><a href="#resume" data-id="resume">Resume</a></li>
-            <li id="main-menu2"><a href="#projects" data-id="projects">Projects</a></li>
-            <li id="main-menu3"><a href="#contact" data-id="contact">Contact</a></li>
+            <li id="main-menu1">
+              <a href="#resume" data-id="resume">Resume</a>
+            </li>
+            <li id="main-menu2">
+              <a href="#projects" data-id="projects">Projects</a>
+            </li>
+            <li id="main-menu3">
+              <a href="#contact" data-id="contact">Contact</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -129,9 +133,11 @@
               </h4>
               <h5>Server</h5>
               <p>Interacted and served ~30 customers simultaneously</p>
-              <p>Ensured guest happiness by initiating conversation and tending to needs</p>
+              <p>
+                Ensured guest happiness by initiating conversation and tending
+                to needs
+              </p>
               <p>Cleaned and organized various front and back of house areas</p>
-              
             </div>
           </li>
           <li>
@@ -143,7 +149,9 @@
               </h4>
               <h5>Online Tutor</h5>
               <p>Hosted tutoring sessions online for students</p>
-              <p>Explained complex math concepts such as algebra and geometry</p>
+              <p>
+                Explained complex math concepts such as algebra and geometry
+              </p>
               <p>Encouraged group discussion between students</p>
             </div>
           </li>
@@ -157,12 +165,13 @@
           <li>
             <div class="timelineUnit">
               <h4>
-                California State University, Long Beach<span class="timelineDate">2021 - present</span>
+                California State University, Long Beach<span
+                  class="timelineDate"
+                  >2021 - present</span
+                >
               </h4>
               <h5>School Of Engineering</h5>
-              <p>
-                Major: Computer Science, GPA of 3.9
-              </p>
+              <p>Major: Computer Science, GPA of 3.9</p>
             </div>
           </li>
           <div class="clear"></div>
@@ -179,7 +188,8 @@
               </h4>
               <h5>Blooming Music Academy</h5>
               <p>
-                With piano as one of my passions, I taught students how to play the piano and basic piano theory
+                With piano as one of my passions, I taught students how to play
+                the piano and basic piano theory
               </p>
             </div>
           </li>
@@ -257,11 +267,185 @@
     <!-- PROJECTS SECTION -->
 
     <section id="projects">
-      
+      <ul class="cats-filter" id="portfolio-filter">
+        <li><a href="" class="current transition" data-filter="*">All</a></li>
+
+        <li><a href="" class="transition" data-filter=".games">Games</a></li>
+
+        <li><a href="" class="transition" data-filter=".apps">Apps</a></li>
+
+        <li>
+          <a href="" class="transition" data-filter=".webdev"
+            >Web Development</a
+          >
+        </li>
+
+        <li>
+          <a href="" class="transition" data-filter=".mixed">Mixed Media</a>
+        </li>
+
+        <li>
+          <a href="" class="transition" data-filter=".workshops">Workshops</a>
+        </li>
+
+        <li><a href="" class="transition" data-filter=".music">Music</a></li>
+      </ul>
+      <div class="extra-text">
+        I've worked on some cool things... take a look!
+      </div>
+      <ul id="portfolio-list">
+        <li class="workshops games">
+          <a
+            href="portfolio/1.jpg"
+            rel="portfolio[1]"
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet"
+            class="folio"
+          >
+            <img src="portfolio/1-thumb.jpg" alt="Image Title" />
+            <h2 class="title">Workout Tracker</h2>
+            <span class="categorie">Apps / Web Development</span>
+          </a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+        </li>
+
+        <li class="webdev">
+          <a
+            href="https://youtu.be/dQw4w9WgXcQ"
+            rel="portfolio"
+            title="This is the description"
+            class="folio"
+          >
+            <img src="portfolio/3-thumb.jpg" alt="" />
+            <h2 class="title">Dogecoin Monitor</h2>
+            <span class="categorie">Web Development</span>
+          </a>
+        </li>
+        <li class="mixed">
+          <a href="http://www.google.com" target="_new">
+            <img src="portfolio/2-thumb.jpg" alt="" />
+            <h2 class="title">Really Angry Birds</h2>
+            <span class="categorie">Mixed Media</span>
+          </a>
+        </li>
+        <li class="opensource games">
+          <a href="portfolio/4.jpg" rel="portfolio" class="folio">
+            <img src="portfolio/4-thumb.jpg" alt="" />
+            <h2 class="title">The Denizens</h2>
+            <span class="categorie">Games / Open Source</span>
+          </a>
+        </li>
+        <li class="apps opensource">
+          <a
+            href="portfolio/1.jpg"
+            rel="portfolio[1]"
+            title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet"
+            class="folio"
+          >
+            <img src="portfolio/1-thumb.jpg" alt="Image Title" />
+            <h2 class="title">Workout Tracker</h2>
+            <span class="categorie">Apps / Web Development</span>
+          </a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+          <a
+            href="portfolio/4.jpg"
+            rel="portfolio[1]"
+            title="This is the description"
+            class="folio hidden"
+          ></a>
+        </li>
+        <li class="webdev">
+          <a
+            href="https://www.youtube.com/watch?v=_lK4cX5xGiQ"
+            rel="portfolio"
+            title="This is the description"
+            class="folio"
+          >
+            <img src="portfolio/3-thumb.jpg" alt="" />
+            <h2 class="title">Dogecoin Monitor</h2>
+            <span class="categorie">Web Development</span>
+          </a>
+        </li>
+        <li class="mixed">
+          <a href="http://www.google.com" target="_new">
+            <img src="portfolio/2-thumb.jpg" alt="" />
+            <h2 class="title">Really Angry Birds</h2>
+            <span class="categorie">Mixed Media</span>
+          </a>
+        </li>
+        <li class="opensource games">
+          <a href="portfolio/4.jpg" rel="portfolio" class="folio">
+            <img src="portfolio/4-thumb.jpg" alt="" />
+            <h2 class="title">The Denizens</h2>
+            <span class="categorie">Games / Open Source</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
-    <section id="contact">
-
-    </section>
+    <section id="contact"></section>
   </body>
 </html>
