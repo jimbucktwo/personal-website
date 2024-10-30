@@ -385,4 +385,61 @@ div.home-page h1 {
 
 #contact {
   display: none;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  background-color: rgb(255, 255, 252);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  width: 25%;
+}
+
+.name label {
+  display: block;
+}
+
+.email {
+  width: 25%;
+}
+
+.email label {
+  display: block;
+}
+
+.subject {
+  width: 100%;
+}
+
+.subject label {
+  display: block;
+}
+
+.subject input {
+  width: 47.5%;
+}
+
+.message {
+  width: 100%;
+}
+
+.message label {
+  display: block;
+}
+
+.message textarea {
+  width: 100%;
+  height: auto;
+}
+
+.submit-btn {
+
 }
