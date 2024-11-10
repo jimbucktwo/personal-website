@@ -375,10 +375,16 @@ div.home-page h1 {
 .project {
   width: 24%;
   padding: 16px;
+  
 }
 
 .project img {
   max-width: 100%;
+  border-radius: 4px;
+}
+
+.project h3 {
+  margin-top: 12px;
 }
 
 /* CONTACT SECTION */
