@@ -104,7 +104,7 @@ h3 {
   border-radius: 5px;
 }
 
-div.home-page h1 {
+.home-page h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   text-align: center;
@@ -241,6 +241,9 @@ div.home-page h1 {
   max-width: 800px;
   background-color: rgb(255, 255, 252);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 .skills-section, .timeline-section {
@@ -363,6 +366,9 @@ div.home-page h1 {
     max-width: 800px;
     background-color: rgb(255, 255, 252);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 #portfolio-list {
@@ -398,6 +404,9 @@ div.home-page h1 {
   max-width: 800px;
   background-color: rgb(255, 255, 252);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
 .contact-form {
@@ -448,4 +457,10 @@ div.home-page h1 {
 
 .submit-btn {
 
+}
+
+#resume.active, #projects.active, #contact.active, #home-page.active {
+  display: block;
+  max-height: 1000px; /* Adjust as needed */
+  padding: 20px;
 }

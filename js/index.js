@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ids = ["resume", "projects", "contact"];
   const sections = ids.map((id) => document.querySelector(`#${id}`));
   const homePage = document.querySelector(".home-page");
+  const home = document.querySelector(".home-with-header");
   const original = homePage.innerHTML;
 
   idsetters.forEach((selector, index) => {
@@ -12,20 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector("#home-button").addEventListener("click", function () {
     homePage.innerHTML = original;
-    sections.forEach((section) => (section.style.display = "none"));
-  });
+    sections.forEach(section => {
+        section.classList.remove("active");
+        section.style.display = "none";
+    });
+});
 
-  buttons.addEventListener("click", function (e) {
-    if (e.target && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
-      homePage.innerHTML = "";
-      sections.forEach((section) => (section.style.display = "none"));
+buttons.addEventListener("click", function (e) {
+  if (e.target && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
+      homePage.innerHTML = '';
+      homePage.classList.remove("active");
+      sections.forEach(section => {
+          section.classList.remove("active");
+          section.style.display = "none";
+      });
 
       const targetId = e.target.dataset.id;
       if (targetId) {
-        document.querySelector(`#${targetId}`).style.display = "block";
+          const targetSection = document.querySelector(`#${targetId}`);
+          targetSection.style.display = "block";
+          setTimeout(() => targetSection.classList.add("active"), 50); // Delay to trigger transition
       }
-    }
-  });
+  }
+});
 
   //JQuery practice in adding skill points
   $(".skills li .rating").each(function (index, e) {
