@@ -464,3 +464,7 @@ h3 {
   max-height: 1000px; /* Adjust as needed */
   padding: 20px;
 }
+
+#map {
+  height: 100%;
+}

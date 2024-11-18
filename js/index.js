@@ -13,29 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector("#home-button").addEventListener("click", function () {
     homePage.innerHTML = original;
-    sections.forEach(section => {
+    sections.forEach((section) => {
+      section.classList.remove("active");
+      section.style.display = "none";
+    });
+  });
+
+  buttons.addEventListener("click", function (e) {
+    if (e.target && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
+      homePage.innerHTML = "";
+      homePage.classList.remove("active");
+      sections.forEach((section) => {
         section.classList.remove("active");
         section.style.display = "none";
-    });
-});
-
-buttons.addEventListener("click", function (e) {
-  if (e.target && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
-      homePage.innerHTML = '';
-      homePage.classList.remove("active");
-      sections.forEach(section => {
-          section.classList.remove("active");
-          section.style.display = "none";
       });
 
       const targetId = e.target.dataset.id;
       if (targetId) {
-          const targetSection = document.querySelector(`#${targetId}`);
-          targetSection.style.display = "block";
-          setTimeout(() => targetSection.classList.add("active"), 50); // Delay to trigger transition
+        const targetSection = document.querySelector(`#${targetId}`);
+        targetSection.style.display = "block";
+        setTimeout(() => targetSection.classList.add("active"), 50); // Delay to trigger transition
       }
-  }
-});
+    }
+  });
 
   //JQuery practice in adding skill points
   $(".skills li .rating").each(function (index, e) {
@@ -60,6 +60,4 @@ buttons.addEventListener("click", function (e) {
         });
       });
   });
-
-  
 });
