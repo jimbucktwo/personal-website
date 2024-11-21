@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(selector).dataset.id = ids[index];
   });
 
+  //Home button event listener
   document.querySelector("#home-button").addEventListener("click", function () {
     homePage.innerHTML = original;
     sections.forEach((section) => {
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //pages event listener to display different sections
   buttons.addEventListener("click", function (e) {
     if (e.target && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
       homePage.innerHTML = "";
